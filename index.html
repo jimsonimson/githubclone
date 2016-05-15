@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-default container-fluid ">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">GitHub</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search GitHub">
+            </div>
+          </form>
+
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#">Pull Requests</a></li>
+            <li><a href="#">Issues</a></li>
+            <li><a href="#">Gist</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">hello</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"><span class="glyphicon glyphicon-plus"></span><span class="caret"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col-md-3">
+          <div class="gitImage">
+            <img class="avatar" height="230" width="230">
+          </div>
+          <span class="username"></span>
+          <hr>
+          <div>
+            <span class="glyphicon glyphicon-time">  </span>
+            <p>Joined on <span class="joindate"></span></p>
+          </div>
+          <hr>
+          <div class="col-md-4 text-center">
+            <h3 class="followers"></h3>
+            <h6>Followers</h6>
+          </div>
+          <div class="col-md-4 text-center">
+            <h3 class="starred"></h3>
+            <h6>Starred</h6>
+          </div>
+          <div class="col-md-4 text-center">
+            <h3 class="following"></h3>
+            <h6>Following</h6>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="col-md-9">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#contributions">Contributions</a></li>
+            <li><a href="#">Repositories</a></li>
+            <li><a href="#">Public activity</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="contributions" class="tab-pane active">
+              <div class="col-md-6">
+                <br>
+                <div class="panel panel-default">
+                  <div class="panel-heading">Popular repositories</div>
+                  <div class="panel-body poprepos">
+                    Panel content
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <br>
+                <div class="panel panel-default">
+                  <div class="panel-heading">Repositories contributed to</div>
+                  <div class="panel-body">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--JS -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>
